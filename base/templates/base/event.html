@@ -1,0 +1,28 @@
+{% extends 'main.html' %}
+
+{% block content %}
+
+<main class="layout layout--2">
+  <div class="container">
+    <!-- Topics Start -->
+    <div>
+      {% include 'base/topics_component.html' %}
+    </div>
+    <!-- Topics End -->
+
+    <!-- Room List Start -->
+    <div class="roomList">
+      <div class="roomList__header">
+        <h2>Total Events</h2>
+        <p>{{event_count}} events available</p>
+      </div>
+
+      <div>
+        {% include 'base/feed_component.html' %}
+      </div>
+    </div>
+    <!-- Room List End -->
+  </div>
+</main>
+
+{% endblock content %}

@@ -1,0 +1,53 @@
+{% extends 'main.html' %}
+
+{% block title %}Livestream - FunOlympics Site{% endblock %}
+
+{% block content %}
+
+<style>
+    .event-container{
+        display: grid;
+        text-decoration: none;
+        padding-top: 7px;
+        padding-right: 20px;
+    }
+
+    .live_video {
+    position: absolute; /* Stretch the video to cover the full screen */
+    top: 20%;
+    left: 10%;
+    width: 95vw;
+    height: 90vh;   
+    }
+
+    .live_video video {
+        width: 80%;
+        height: 80%;
+        object-fit: cover; /* Cover the entire screen, might crop some parts */
+    }
+
+</style>
+
+<div class="event-container">
+
+    <div style="padding-left: 40%;">
+        <h1 class="livestream_pages" style=" display: inline; padding-right: 5%;">{{event.name}}</h1>
+        <h3 class="roomListRoom__topic" style="display: inline;">{{event.topic.name}}</h3>
+    </div>
+
+    <div class="live_video">
+        {% if event.video_url %}
+        <video width="320" height="240" controls autoplay>
+            <source src="{{ event.video_url.url }}" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        {% else %}
+        <p>Not working !</p>
+        {% endif %}
+    </div>
+
+</div>
+
+{% endblock %}
+
+

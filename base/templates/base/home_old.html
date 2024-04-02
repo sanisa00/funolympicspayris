@@ -1,0 +1,20 @@
+{% extends 'main.html' %}
+
+{% load static %}
+
+{% block title %}Home - FunOlympics Site{% endblock %}
+
+
+
+{% block content %}
+
+<h1>Home Template</h1>
+<p>Home page content goes here.</p>
+<img src="{% static 'images/logo.png' %}">
+{% if request.user.is_authenticated %}
+<p>Hello {{request.user}} !</p>
+{% endif %}
+
+
+
+{% endblock content %}

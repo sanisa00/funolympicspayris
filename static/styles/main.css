@@ -1,0 +1,61 @@
+body{
+    background-color: antiquewhite;
+}
+
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    background-color: #f8f8f8;
+    overflow: hidden;
+    border-bottom: 1px solid #e7e7e7;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 15px;
+}
+
+.navbar-brand {
+    display: inline;
+    color: #777;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 24px;
+    padding: 14px 20px;
+}
+
+.navbar-nav {
+    display: inline;
+    float: right;
+    padding: 0px 40px 0px 0px;
+}
+
+.nav-item {
+    display: inline-block;
+    padding: 14px 16px;
+    color: #777;
+    text-decoration: none;
+}
+
+/* .navbar-right {
+    float: right;
+} */
+
+.navbar a:hover, .navbar a:focus {
+    color: #333;
+    text-decoration: none;
+}
+
+/* Responsive layout - makes the navbar look good on all screens */
+@media screen and (max-width: 600px) {
+    .navbar-nav, .navbar-right {
+        float: none;
+    }
+}
+

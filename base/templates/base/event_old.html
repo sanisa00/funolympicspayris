@@ -1,0 +1,47 @@
+{% extends 'main.html' %}
+
+{% block title %}Events - FunOlympics Site{% endblock %}
+
+{% block content %}
+
+<style>
+    .event-container{
+        display: grid;
+        grid-template-columns: 1fr 3fr 1fr;
+        text-decoration: none;
+    }
+
+    .livestream-container{
+        padding-left: 50px;
+        text-decoration: none;
+    }
+</style>
+
+
+<h1>Events</h1>
+
+
+<div class="event-container">
+
+    <div>
+        {% include 'base/topics_component.html' %}
+    </div>
+
+
+    <div>
+        <div>
+            <h5>{{event_count}} events available</h5>
+        </div>
+        {% include 'base/feed_component.html' %}
+    </div>
+
+    <div>
+        {% include 'base/activity_component.html' %}
+    </div>
+
+    
+
+</div>
+
+{% endblock %}
+

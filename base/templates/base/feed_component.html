@@ -1,0 +1,26 @@
+
+<div class="events-container">
+  {% for event in events %}
+  <div class="events-content">
+
+    <div class="roomListRoom__content">
+      <a href="{% url 'livestream' event.id %}">{{event.name}}</a>
+    </div>
+
+    <div class="events_photos">
+      <a href="{% url 'livestream' event.id %}">
+        {% if event.image %}
+        <img src="{{event.image.url}}" />
+        {% else %}
+        <p>No image available</p>
+        {% endif %}
+      </a>
+    </div>
+
+    <div class="roomListRoom__meta">
+      <p class="roomListRoom__topic">{{event.topic.name}}</p>
+    </div>
+
+  </div>
+  {% endfor %}
+</div>
