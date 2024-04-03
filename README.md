@@ -1,7 +1,7 @@
 # FunOlympic Games Online Registration System
 
 ## Introduction
-The City of Payris is proud to host the upcoming FunOlympic Games in 2024. As part of our commitment to delivering a seamless and inclusive experience, we have developed an online registration system. This platform enables global audiences to register, login, and select broadcasts they wish to watch, ensuring the games are accessible to everyone, anywhere.
+[Product Development Scenario]The City of Payris is proud to host the upcoming FunOlympic Games in 2024. As part of the commitment to delivering a seamless and inclusive experience, I have developed an online registration system. This platform enables global audiences to register, login, and select broadcasts they wish to watch, ensuring the games are accessible to everyone, anywhere.
 
 ## Features
 
@@ -13,14 +13,14 @@ The City of Payris is proud to host the upcoming FunOlympic Games in 2024. As pa
 ### Admin Features
 - **User Management**: View and manage user registrations.
 - **Interaction Overview**: Monitor user interactions and preferences.
-- **Password Reset**: Assist users with password recovery and resets.
+- **Event Management**: Manage events.
 
 ## Getting Started
 
 ### Prerequisites
-- Python 3.8+
-- Django 3.2+
-- Additional dependencies listed in `requirements.txt`
+- Python 3.10+
+- Django 5.0.1+
+- 
 
 ### Installation
 1. Clone the project repository:
